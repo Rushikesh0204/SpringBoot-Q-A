@@ -22,7 +22,7 @@ Q2) WHy Spring Boot over Spring ?
  d)Embedded server: provide tomcat server by default
 
  
-<para> 
+<pre> 
  **Feature            ***  Spring Boot  ** Spring Framwork
    Opinionated       -->   yes           no
    
@@ -30,7 +30,7 @@ Q2) WHy Spring Boot over Spring ?
    Starter dependencies->  yes           no
    embedded server    ---> yes           no
    Flexibility        -->  less          more
-   </para>
+   </pre>
 
    
    (flexibility --in spring boot most of the thing done by spring so less,
