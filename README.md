@@ -52,7 +52,41 @@ What is a Spring configuration file?
 -A Spring configuration file defines the relationship between different classes in the Spring application.
 it defines application behavior by allowing you to declare configurations such as Beans and Bean life cycles.
 @Configuration annotation are very similar to questions about the Spring configuration file.
+( xml file which is contains the infrmation of classes and describe how those classes configured linked each other )
 
+Q) What is spring Bean ?
+- also called object -->creation manage and destroy by spring container calledd as spring IOC
+- created by the help of configuration file --which is supply by use to ioc container
+
+Q) Difference between Constructor and Setter Injection?
+<pre>
+  constructor                  Setter 
+  -partial injection not       partial injection yes
+  possible
+  -new instance will be        Not created but 
+  created , modification        modification done
+  not be possible 
+  -bean have many property     some few property
+  
+</pre>
+
+Q) what are the Bean Scope Spring Provided?
+- Scope-> how long object present in application
+- 1)Singleton:only one object application
+- 2) Prototype:every time new object is created when you access 
+  3) Request:
+  4) Session: container create object when login user and destroy on log out
+ 
+Q) Whate Bean Wiring?
+(injecting dependancy in bean )
+beans are combined together inside the Spring Container that called 
+linkking two object  -- how in xml file 
+spring container should know what beans are needed and how the beans are dependent each other while wiring beans
+
+Q) What is Autowiring in Spring and what are the different modes it have?
+Spring framework can inject dependency Automatically
+
+  
 
 
 
@@ -60,5 +94,18 @@ it defines application behavior by allowing you to declare configurations such a
 
 
 What is the Spring IoC (Inversion of Control) Container?
+- spring container use--managing application comonents by creating object wiring them together along with cofiguring and managing their overall life
+cycles
+-spring container to do task will provided either by xml configuration ,annotation of java code This whole process called as inversion of control
+
+
+Q) What are the type of DI ?
+Mainly there are 5 type of dependency injectjection 
+a)constructor injection : object are creating aby parameterise cunstructor and valuse are injecter
+b) Setter Injection : object created by default constructor and value set by setter methods 
+c) Field Injection(@Autowired):
+d) circular : using setter
+e)Lookup method injection: two object are connected 1st is singletone and 2nd is proto 
+
 
 
